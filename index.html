@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Krishna Dhakal, PhD EIT</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="------">
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,500,400italic,300italic,300,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="/assets/plugins/font-awesome/css/font-awesome.css">
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.js" integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA=" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            color: #545E6C;
+            background-image: url('background.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            font-size: 16px;
+            padding: 30px;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: 700
+        }
+        
+        a {
+            color: #2d7788
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #1a454f
+        }
+
+        a:focus {
+            text-decoration: none
+        }
+
+        p {
+            line-height: 1.7;
+        }
+
+        .wrapper {
+            max-width: 1100px;
+            margin: 0 auto;
+            position: relative;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .sidebar {
+            background: white; /*42A8C0*/
+            position: absolute;
+            left: 0;
+            width: 300px;
+            height: 100%;
+            min-height: 800px;
+            color: rgba(0, 0, 0, 0.6);
+            font-size: 15px;
+        }
+
+        .sidebar a {
+            color: inherit;
+        }
+
+        .sidebar .profile {
+            padding: 30px;
+            /*background: rgba(0, 0, 0, 0.2);*/
+            text-align: center;
+        }
+
+        .sidebar .name {
+            font-size: 30px;
+            font-weight: 700;
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #777;
+        }
+
+        .sidebar .subtitle {
+            color: rgba(0, 0, 0, 0.4);
+            font-size: 18px;
+            font-weight: 400;
+            margin-top: 0;
+            margin-bottom: 0
+        }
+
+        .sidebar .profile {
+            margin-bottom: 15px
+        }
+
+        .sidebar .profile-img {
+            max-width: 100px;
+            margin-bottom: 15px;
+            border: 0px solid #fff;
+            border-radius: 100%;
+        }
+
+        .sidebar .fa, .sidebar .fab {
+            margin-right: 8px;
+            width: 18px;
+            vertical-align: middle;
+            font-size: 1.2em;
+        }
+
+        .sidebar .contact-list li {
+            margin-bottom: 15px
+        }
+
+        .sidebar .contact-list li:last-child {
+            margin-bottom: 0
+        }
+
+        .sidebar .panel {
+            padding: 30px
+        }
+
+        .sidebar .title {
+            text-transform: uppercase;
+            font-size: 16px;
+            font-weight: 700;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        
+        .sidebar .title .fa {
+            width: 20px;
+            text-align: center;
+            margin-right: 7px;
+        }
+
+        .sidebar .degree {
+            font-size: 14px;
+            margin-top: 0;
+            margin-bottom: 5px
+        }
+
+        .sidebar .education .item {
+            margin-bottom: 15px
+        }
+
+        .sidebar .education .item:last-child {
+            margin-bottom: 0
+        }
+
+        .sidebar .education .name {
+            color: rgba(0, 0, 0, 0.6);
+            font-weight: 500;
+            margin-bottom: 2px;
+            margin-top: 0;
+            font-size: 1em;
+        }
+
+        .sidebar .education .time {
+            color: rgba(0, 0, 0, 0.6);
+            font-weight: 500;
+            margin-bottom: 0px
+        }
+
+        .sidebar .languages .lang-desc {
+            color: rgba(0, 0, 0, 0.6)
+        }
+
+        .sidebar .languages-list {
+            margin-bottom: 0
+        }
+
+        .sidebar .languages-list li {
+            margin-bottom: 10px
+        }
+
+        .sidebar .languages-list li:last-child {
+            margin-bottom: 0
+        }
+
+        .sidebar .interests-list {
+            margin-bottom: 0
+        }
+
+        .sidebar .interests-list li {
+            margin-bottom: 10px
+        }
+
+        .sidebar .interests-list li:last-child {
+            margin-bottom: 0
+        }
+
+        .content {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 60px;
+            padding-left: 320px;
+        }
+
+        .content .title {
+            font-size: 30px;
+            font-weight: 300;
+            color: #3A869D;
+            position: relative;
+            margin-top: 0;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .content .title .fa {
+            width: 30px;
+            height: 30px;
+            margin-right: 8px;
+            display: inline-block;
+            color: #fff;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+            border-radius: 50%;
+            -moz-background-clip: padding;
+            -webkit-background-clip: padding-box;
+            background-clip: padding-box;
+            background: #3A869D;
+            text-align: center;
+            padding-top: 8px;
+            font-size: 16px;
+            position: relative;
+            top: -2px
+        }
+
+        .content .panel {
+            margin-bottom: 60px
+        }
+
+        .content .experiences .item,
+        .content .education .item {
+            margin-bottom: 30px
+        }
+
+        .content .upper-row {
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 2px
+        }
+
+        .content .job-title,
+        .content .degree {
+            color: #3A869D;
+            font-size: 16px;
+            margin-top: 0;
+            margin-bottom: 0;
+            font-weight: 500
+        }
+
+        .content .time {
+            position: absolute;
+            right: 0;
+            top: 0;
+            color: #3A869D
+        }
+
+        .content .company,
+        .content .university {
+            margin-bottom: 10px;
+            color: #3A869D
+        }
+
+        .content .experience-title {
+            font-size: 16px;
+            font-weight: 400;
+            margin-top: 0;
+            margin-bottom: 5px
+        }
+
+        .content .experience .intro {
+            margin-bottom: 30px
+        }
+
+        .content .experience .item {
+            margin-bottom: 15px
+        }
+
+        .content .publications .item .title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #3F4650;
+            margin-bottom: 1px;
+            text-align: left;
+        }
+
+        .content .publications .authors {
+            font-style: italic;
+            color: #3A869D;
+            margin-bottom: 1px
+        }
+
+        .content .publications .intro {
+            margin-bottom: 30px
+        }
+
+        .content .publications .item {
+            margin-bottom: 15px
+        }
+
+        .skillset .item {
+            margin-bottom: 15px;
+            overflow: hidden
+        }
+
+        .skillset .level-title {
+            font-size: 14px;
+            margin-top: 0;
+            margin-bottom: 12px
+        }
+
+        .skillset .level-bar {
+            height: 12px;
+            background: #f5f5f5
+        }
+
+        .skillset .level-bar-inner {
+            height: 12px;
+            background: #7bc2d3
+        }
+
+        @media (max-width: 767px) {
+            body {
+                padding: 0
+            }
+            .sidebar {
+                position: static;
+                width: inherit
+            }
+            .content {
+                padding: 30px
+            }
+            .content .time {
+                position: static;
+                display: block;
+                margin-top: 5px
+            }
+            .content .upper-row {
+                margin-bottom: 0
+            }
+        }
+
+        @media (min-width: 992px) {
+            .skillset .level-title {
+                display: inline-block;
+                float: left;
+                width: 30%;
+                margin-bottom: 0
+            }
+            .skillset .level-bar {
+                display: inline-block;
+                width: 70%;
+                float: left;
+                position: relative;
+                top: 1px
+            }
+        }
+
+        @media print {
+            @page {
+                size: A4
+            }
+            body {
+                font-size: 12pt
+            }
+            img.profile-img {
+                filter: grayscale(1);
+                -webkit-filter: greyscale(1)
+            }
+            .content .time {
+                float: right;
+                color: black !important;
+                -webkit-print-color-adjust: exact
+            }
+            .sidebar {
+                position: static;
+                float: right;
+                width: 40%;
+                -webkit-print-color-adjust: exact
+            }
+            .remove.panel {
+                display: none
+            }
+            .skillset .level-bar-inner {
+                background-color: black !important;
+                -webkit-print-color-adjust: exact
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <div class="profile"> <img class="profile-img" src="profile-pic.jpg" alt="profile picture" />
+                <h1 class="name">Krishna P. Dhakal</h1>
+                <h3 class="subtitle">PhD EIT</h3>
+            </div>
+            <div class="contact panel">
+                <ul class="list-unstyled contact-list">
+                    <li class="email"><i class="fa fa-envelope"></i><a href="mailto:krishna.gogreen@gmail.com"><span class="__cf_email__">krishna.gogreen@gmail.com</span></a></li>
+                    <li class="phone"><i class="fa fa-flip-horizontal fa-phone"></i><a href="tel:(618) 303-7987">(618) 303-7987</a></li>
+                    <!--<li class="linkedin"><i class="fab fa-linkedin"></i><a href="https://linkedin.com/in/krishna-dhakal" target="_blank">krishna-dhakal</a></li>
+                    <li class="twitter"><i class="fab fa-twitter"></i><a href="https://twitter.com/@kpdhakal" target="_blank">@kpdhakal</a></li>-->
+                </ul>
+            </div>
+            <div class="education panel">
+                <h2 class="title"><i class="fa fa-graduation-cap"></i>Education</h2>
+                <div class="item">
+                    <h4 class="degree">PhD in Environmental Resources and Policy</h4>
+                    <h5 class="name">Southern Illinois University</h5>
+                    <div class="time">2011 - 2012</div>
+                </div>
+                <div class="item">
+                    <h4 class="degree">MS in Civil Engineering</h4>
+                    <h5 class="name">Western Michigan University</h5>
+                    <div class="time">2007 - 2011</div>
+                </div>
+                <div class="item">
+                    <h4 class="degree">BS in Civil Engineering</h4>
+                    <h5 class="name">Tribhuvan University, Institute of Engineering</h5>
+                    <div class="time">1993 - 1997</div>
+                </div>
+            </div>
+            <div class="languages panel">
+                <h2 class="title"><i class="fa fa-language"></i>Languages</h2>
+                <ul class="list-unstyled interests-list">
+                    <li>English <span class="lang-desc">(Professional)</span></li>
+                    <li>Nepali <span class="lang-desc">(Native)</span></li>
+                    <li>Hindi <span class="lang-desc">(Complete fluency)</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="panel summary">
+                <h2 class="title">who I am</h2>
+                <div class="summary">
+                    <p>Sustainability professional with an advanced interdisciplinary degree in environmental resources and policy.  Recent publications relevant on sustainability.  Over ten years of industry/government experience urban planning, sustainable neighborhood, and urban infrastructure design and implementation across multicultural environments.  Seeking for a position that provides an opportunity to contribute to sustainability through teaching, research, publication, and advocacy.</p>
+                </div>
+            </div>
+            <!--
+            <div class="panel experience">
+                <h2 class="title">professional experience</h2>
+                <div class="intro">
+                    <p>You can list your side projects or open source libraries in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.</p>
+                </div>
+                <div class="item"> <span class="experience-title"><a href="#hook">Velocity</a></span> - <span class="project-tagline">A responsive website template designed to help startups promote, market and sell their products.</span></div>
+                <div class="item"> <span class="experience-title"><a href="#">DevStudio</a></span> - <span class="project-tagline">A responsive website template designed to help web developers/designers market their services.</span></div>
+                <div class="item"> <span class="experience-title"><a href="#">Tempo</a></span> - <span class="project-tagline">A responsive website template designed to help startups promote their products or services and to attract users &amp; investors</span></div>
+                <div class="item"> <span class="experience-title"><a href="#">Atom</a></span> - <span class="project-tagline">A comprehensive website template solution for startups/developers to market their mobile apps.</span></div>
+                <div class="item"> <span class="experience-title"><a href="#">Delta</a></span> - <span class="project-tagline">A responsive Bootstrap one page theme designed to help app developers promote their mobile apps</span></div>
+            </div>-->
+            <div class="panel publications">
+                <h2 class="title">publications</h2>
+                <div class="item">
+                    <div class="title">Urban stormwater governance: the need for a paradigm shift</div>
+                    <div class="authors">KP Dhakal, LR Chevalier</div>
+                    <div class="conference">Environmental management 57 (5), 1112-1124</div>
+                </div>
+                <div class="item">
+                    <div class="title">Integrating sustainability into highway projects: Sustainability indicators and assessment tool for Michigan roads</div>
+                    <div class="authors">KP Dhakal, JS Oh</div>
+                    <div class="conference">Transportation and Development Institute Congress 2011: Integrated...</div>
+                </div>
+                <div class="item">
+                    <div class="title">Implementing Low Impact Development in Urban Landscapes: A Policy Perspective</div>
+                    <div class="authors">KP Dhakal, LR Chevalier</div>
+                    <div class="conference">World Environmental and Water Resources Congress 2015, 322-333</div>
+                </div>
+                <div class="item">
+                    <div class="title">Managing urban stormwater for urban sustainability: Barriers and policy solutions for green infrastructure application</div>
+                    <div class="authors">KP Dhakal, LR Chevalier</div>
+                    <div class="conference">Journal of Environmental management, https://doi.org/10.1016/j.jenvman.2017...</div>
+                </div>
+                <div style="text-align: center;">
+                    <a target="_blank" href="https://scholar.google.com/citations?user=b5KTL1UAAAAJ">See more on Google Scholar<i style="margin-left:.3em" class="fa fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="skills panel">
+                <h2 class="title">skills/proficiencies</h2>
+                <style>
+                    .skills.panel{
+                        text-align: center;
+                    }
+                    .skillset .card {
+                        display: inline-block;
+                        padding: 6px;
+                        width: 23%;
+                        min-width: 175px;
+                        margin: 1px;
+                        position: relative;
+                        overflow: hidden;
+                    }
+                    .thumbnail{
+                        width: 100%;
+                        height: 180px;
+                        background: lightblue;
+                        background-size: cover;
+                        background-position: center;
+                    }
+                    .card .subtitle{
+                        padding: 5px 0px;
+                        margin-top: 2px;
+                        margin-bottom: 2px;
+                        font-size: 0.88em;
+                        font-weight: bold;
+                        text-align: left;
+                        position: absolute;
+                        bottom: 0;
+                        background: white;
+                        width: 100%;
+                        padding-right: 10px;
+                        height: auto;
+                    }
+                </style>
+                <div class="skillset">
+                    <div class="card">
+                        <div class="thumbnail" style="background-image:url('leadership.jpg')">
+                        </div>
+                        <div class="subtitle">Project management/leadership</div>
+                    </div>
+                    <div class="card">
+                        <div class="thumbnail" style="background-image:url('solving.jpg')">
+                        </div>
+                        <div class="subtitle">Problem solving</div>
+                    </div>
+                    <div class="card">
+                        <div class="thumbnail" style="background-image:url('communication.jpg')">
+                        </div>
+                        <div class="subtitle">Communication/ negotiation</div>
+                    </div>
+                    <div class="card">
+                        <div class="thumbnail" style="background-image:url('data.jpg')">
+                        </div>
+                        <div class="subtitle">Document production/control</div>
+                    </div>
+                    <div class="card">
+                        <div class="thumbnail" style="background-image:url('interpersonal.jpg')">
+                        </div>
+                        <div class="subtitle">Interpersonal skills</div>
+                    </div>
+                    <div class="card">
+                        <div class="thumbnail" style="background-image:url('negotiation.jpg')">
+                        </div>
+                        <div class="subtitle">Stakeholder coordination/conflict resolution</div>
+                    </div>
+                    <div class="card">
+                        <div class="thumbnail" style="background-image:url('compliance.jpg')">
+                        </div>
+                        <div class="subtitle">Permitting /compliance monitoring</div>
+                    </div>
+                    <div class="card">
+                        <div class="thumbnail" style="background-image:url('software.jpg')">
+                        </div>
+                        <div class="subtitle">AutoCAD, ArcGIS, MS Office and Project, Revit</div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
